@@ -34,7 +34,7 @@ Port number of the REST server is `2101`.
 The database is placed at `localhost`.
 There are 2 main queries implemented in `tick/rdb.q` : `getQuotes`, and `getQuoteCandles`. <br />
 
-A typical GET request for candles of bid price for EURUSD with interval=5 minutes, from 2020.08.25 00:00:00 to 2020.08.25 12:00:00 is: 
+A typical GET request for candles of bid price for EURUSD with interval=5 minutes, from 2020.09.01 00:00:00 to 2020.09.01 12:00:00 is: 
 > localhost:2101/candles?symbol=EURUSD&interval=5&pxType=bid&startTime=2020.09.01D00:00:00&endTime=2020.09.01D12:00:00
 
 Look at folder `CFH-data/` for more details on the usage.
