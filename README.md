@@ -1,7 +1,7 @@
 # Restful-Service-Kdb
  
 This this an implementation of a simulation for kx database. <br />
-As the program starts, there are 5 windows running in total. With the naming in `start.sh`, the 5 windows are: `CFH-tick, CFH-hdb, CFH-rdb, CFH-feed, CFH-rest`.
+As the program starts, there are 5 windows running in total. With the naming in `start.sh`, the 5 windows are: `DB-tick, DB-hdb, DB-rdb, DB-feed, DB-rest`.
 
 ## Usages
 To start: `./start.sh` <br />
@@ -18,7 +18,7 @@ Documentations for them can be found here: https://code.kx.com/q/wp/rt-tick/
 
 There is an extra implementation for account permission, including files `tick/pe.q, tick/rp.q, users`. <br />
 Documentation can be found here: https://code.kx.com/q/wp/permissions/ <br />
-File `tick/users` stores the username and password of the accounts. Control this file in window `CFH-tick`
+File `tick/users` stores the username and password of the accounts. Control this file in window `DB-tick`
 
 Port number for this server is:
 > tick.q : port 2000 <br />
@@ -37,4 +37,4 @@ There are 2 main queries implemented in `tick/rdb.q` : `getQuotes`, and `getQuot
 A typical GET request for candles of bid price for EURUSD with interval=5 minutes, from 2020.08.25 00:00:00 to 2020.08.25 12:00:00 is: 
 > localhost:2101/candles?symbol=EURUSD&interval=5&pxType=bid&startTime=2020.09.01D00:00:00&endTime=2020.09.01D12:00:00
 
-Look at folder `CFH-data/` for more details on the usage.
+Look at folder `DB-data/` for more details on the usage.
